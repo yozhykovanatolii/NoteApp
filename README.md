@@ -23,9 +23,9 @@ This application allows you to create, update, delete and search your own notes,
 - [![MVVM Architecture][mvvmarchitecture-shield]][mvvmarchitecture-url]
 
 ## Screnshots
-<img src="https://github.com/yozhykovanatolii/NoteApp/assets/154551334/62f2491f-e3ab-4a3f-8bea-915118db6005" width="450" height="850">
-<img src="https://github.com/yozhykovanatolii/NoteApp/assets/154551334/9d83e965-ba06-4f3d-8d73-be0b78bbfb26" width="450" height="850">
-<img src="https://github.com/yozhykovanatolii/NoteApp/assets/154551334/869c6ee5-89c0-45e6-9de1-0e20410572bd" width="450" height="850">
+<img src="https://github.com/yozhykovanatolii/NoteApp/assets/154551334/62f2491f-e3ab-4a3f-8bea-915118db6005" width="400" height="850">
+<img src="https://github.com/yozhykovanatolii/NoteApp/assets/154551334/9d83e965-ba06-4f3d-8d73-be0b78bbfb26" width="400" height="850">
+<img src="https://github.com/yozhykovanatolii/NoteApp/assets/154551334/869c6ee5-89c0-45e6-9de1-0e20410572bd" width="400" height="850">
 
 [java-shield]: https://img.shields.io/static/v1?message=v8&color=orange&label=Java
 [java-url]: https://www.java.com
