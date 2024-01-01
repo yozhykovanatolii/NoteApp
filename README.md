@@ -6,7 +6,7 @@ This application allows you to create, update, delete and search your own notes,
 
 - [![Java][java-shield]][java-url]
 
-### DataBase
+### Database
 
 - [![ROOM][room-shield]][room-url]
 
