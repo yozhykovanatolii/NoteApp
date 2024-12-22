@@ -1,10 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:get_it/get_it.dart';
 import 'package:note_app/common/theme.dart';
+import 'package:note_app/di/get_it_setup.dart';
 import 'package:note_app/presentation/view/home_page.dart';
 import 'package:note_app/presentation/viewmodel/note_viewmodel.dart';
 import 'package:provider/provider.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  GetItSetup.setupDependencies();
+  await GetIt.instance.allReady();
   runApp(
     ChangeNotifierProvider(
       create: (_) => NoteViewModel(),

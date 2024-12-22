@@ -1,20 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:get_it/get_it.dart';
 import 'package:note_app/data/local/note.dart';
 import 'package:note_app/data/note_repository.dart';
 
 class NoteViewModel extends ChangeNotifier {
-  late final NoteRepository _noteRepository;
+  final NoteRepository _noteRepository = GetIt.instance<NoteRepository>();
   List<Note> _notes = [];
 
   List<Note> get notes => _notes;
 
   NoteViewModel() {
-    _initialize();
-  }
-
-  Future<void> _initialize() async {
-    _noteRepository = await NoteRepository.create();
-    await _getAllNotesFromDB();
+    _getAllNotesFromDB();
   }
 
   Future<void> _getAllNotesFromDB() async {
