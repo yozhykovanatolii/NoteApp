@@ -4,6 +4,10 @@ This application allows you to create, edit, delete or search notes.
 
 ## Technologies
 
+### Core Technologies
+
+- [![Dart][dart-shield]][dart-url]
+
 ### Database
 
 - [![Floor][floor-shield]][floor-url]
@@ -19,6 +23,9 @@ This application allows you to create, edit, delete or search notes.
 ### Architecture
 
 - [![MVVM Architecture][mvvmarchitecture-shield]][mvvmarchitecture-url]
+
+## How to set up a project
+### Steps:
   
 [floor-shield]: https://img.shields.io/static/v1?message=v1.5.0&color=blue&label=Floor
 [floor-url]: https://pub.dev/packages/floor
