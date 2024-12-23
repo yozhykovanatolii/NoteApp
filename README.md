@@ -2,15 +2,19 @@
 
 This application allows you to create, edit, delete or search notes.
 
-## Getting Started
+## Technologies
 
-This project is a starting point for a Flutter application.
+### Dependency Injection
 
-A few resources to get you started if this is your first Flutter project:
+- [![Get_It][get_it-shield]][get_it-url]
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### Architecture
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- [![MVVM Architecture][mvvmarchitecture-shield]][mvvmarchitecture-url]
+
+
+[get_it-shield]: https://img.shields.io/static/v1?message=v2.44&color=white&label=Get_It
+[get_it-url]: https://pub.dev/packages/get_it
+
+[mvvmarchitecture-shield]: https://img.shields.io/static/v1?message=Structured%20Design&color=red&label=MVVM%20Architecture
+[mvvmarchitecture-url]: https://www.digitalocean.com/community/tutorials/android-mvvm-design-pattern
