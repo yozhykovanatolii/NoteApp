@@ -29,11 +29,20 @@ This application allows you to create, edit, delete or search notes.
 ### Steps:
 1. Make sure you have Flutter installed.
 2. Clone this repository:
+
    ```
    git clone https://github.com/yozhykovanatolii/NoteApp.git
    ```
 4. Navigate to the project directory:
-5. Run the app:
+
+   ```
+   cd NoteApp
+   ```
+6. Run the app:
+
+   ```
+   flutter run
+   ```
 
 [dart-shield]: https://img.shields.io/static/v1?message=v3.6.0&color=orange&label=Dart
 [dart-url]: https://dart.dev/
