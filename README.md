@@ -1,6 +1,6 @@
-# note_app
+# Note App
 
-A new Flutter project.
+This application allows you to create, edit, delete or search notes.
 
 ## Getting Started
 
