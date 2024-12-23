@@ -4,6 +4,10 @@ This application allows you to create, edit, delete or search notes.
 
 ## Technologies
 
+### Database
+
+- [![Floor][floor-shield]][floor-url]
+
 ### State Management
 
 - [![Provider][provider-shield]][provider-url]
@@ -16,6 +20,9 @@ This application allows you to create, edit, delete or search notes.
 
 - [![MVVM Architecture][mvvmarchitecture-shield]][mvvmarchitecture-url]
   
+[floor-shield]: https://img.shields.io/static/v1?message=Event%20Handling&color=blue&label=Floor
+[floor-url]: https://pub.dev/packages/floor
+
 [provider-shield]: https://img.shields.io/static/v1?message=v2.9&color=green&label=Provider
 [provider-url]: https://pub.dev/packages/provider
 
