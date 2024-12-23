@@ -7,6 +7,7 @@ This application allows you to create, edit, delete or search notes.
 ### Core Technologies
 
 - [![Dart][dart-shield]][dart-url]
+- [![Flutter][flutter-shield]][flutter-url]
 
 ### Database
 
@@ -26,7 +27,13 @@ This application allows you to create, edit, delete or search notes.
 
 ## How to set up a project
 ### Steps:
-  
+
+[dart-shield]: https://img.shields.io/static/v1?message=v3.6.0&color=orange&label=Dart
+[dart-url]: https://dart.dev/
+
+[flutter-shield]: https://img.shields.io/static/v1?message=v3.27.1&color=yellow&label=Flutter
+[flutter-url]: https://docs.flutter.dev/
+
 [floor-shield]: https://img.shields.io/static/v1?message=v1.5.0&color=blue&label=Floor
 [floor-url]: https://pub.dev/packages/floor
 
