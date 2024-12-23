@@ -46,7 +46,7 @@ This application allows you to create, edit, delete or search notes.
 
 ## Screenshots
 <img src="https://github.com/yozhykovanatolii/NoteApp/blob/main/Screenshot_1734952593.png" width="400" height="850">
-<img src="https://github.com/yozhykovanatolii/WeatherApp/assets/154551334/a63f1791-5c5e-40d1-8a00-22dd83dce416" width="400" height="850">
+<img src="https://github.com/yozhykovanatolii/NoteApp/blob/main/Screenshot_1734952606.png" width="400" height="850">
 
 [dart-shield]: https://img.shields.io/static/v1?message=v3.6.0&color=orange&label=Dart
 [dart-url]: https://dart.dev/
