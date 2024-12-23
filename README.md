@@ -20,7 +20,7 @@ This application allows you to create, edit, delete or search notes.
 
 - [![MVVM Architecture][mvvmarchitecture-shield]][mvvmarchitecture-url]
   
-[floor-shield]: https://img.shields.io/static/v1?message=Database&color=blue&label=Floor
+[floor-shield]: https://img.shields.io/static/v1?message=1.5.0&color=blue&label=Floor
 [floor-url]: https://pub.dev/packages/floor
 
 [provider-shield]: https://img.shields.io/static/v1?message=v2.9&color=green&label=Provider
