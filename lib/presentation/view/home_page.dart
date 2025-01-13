@@ -47,7 +47,7 @@ class HomePage extends StatelessWidget {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () => context.go('/note', extra: null),
+        onPressed: () => context.go('/home/note', extra: null),
         shape: const CircleBorder(),
         child: const Icon(Icons.add),
       ),

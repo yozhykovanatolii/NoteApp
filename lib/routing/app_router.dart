@@ -11,13 +11,15 @@ final router = GoRouter(
       builder: (context, state) {
         return const HomePage();
       },
+      routes: <RouteBase>[
+        GoRoute(
+          path: 'note',
+          builder: (context, state) {
+            final Note? note = state.extra as Note?;
+            return NoteDetailPage(note: note);
+          },
+        ),
+      ],
     ),
-    GoRoute(
-      path: '/note',
-      builder: (context, state) {
-        final Note? note = state.extra as Note?;
-        return NoteDetailPage(note: note);
-      },
-    )
   ],
 );

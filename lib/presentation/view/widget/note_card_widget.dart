@@ -26,7 +26,7 @@ class NoteCardWidget extends StatelessWidget {
           ),
         ),
         child: InkWell(
-          onTap: () => context.go('/note', extra: note),
+          onTap: () => context.go('/home/note', extra: note),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
