@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:note_app/data/local/note.dart';
 import 'package:note_app/presentation/viewmodel/note_viewmodel.dart';
 import 'package:provider/provider.dart';
@@ -43,7 +44,7 @@ class _NoteDetailPageState extends State<NoteDetailPage> {
           children: [
             TextField(
               controller: _titleController,
-              decoration: InputDecoration(
+              decoration: const InputDecoration(
                 border: InputBorder.none,
                 hintText: 'Title',
               ),
@@ -52,7 +53,7 @@ class _NoteDetailPageState extends State<NoteDetailPage> {
               maxLines: null,
               keyboardType: TextInputType.multiline,
               controller: _bodyController,
-              decoration: InputDecoration(
+              decoration: const InputDecoration(
                 border: InputBorder.none,
                 hintText: 'Type something here',
               ),
@@ -67,10 +68,10 @@ class _NoteDetailPageState extends State<NoteDetailPage> {
             _bodyController.text,
             widget.note,
           );
-          Navigator.pop(context);
+          context.go('/home');
         },
-        shape: CircleBorder(),
-        child: Icon(Icons.save),
+        shape: const CircleBorder(),
+        child: const Icon(Icons.save),
       ),
     );
   }

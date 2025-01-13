@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:note_app/presentation/view/list_notes_section.dart';
-import 'package:note_app/presentation/view/note_detail_page.dart';
+import 'package:go_router/go_router.dart';
+import 'package:note_app/presentation/view/widget/note_card_widget.dart';
 import 'package:note_app/presentation/viewmodel/note_viewmodel.dart';
 import 'package:provider/provider.dart';
 
@@ -19,7 +19,7 @@ class HomePage extends StatelessWidget {
         ),
       ),
       body: Padding(
-        padding: EdgeInsets.all(10),
+        padding: const EdgeInsets.all(10),
         child: Column(
           spacing: 30,
           children: [
@@ -29,20 +29,27 @@ class HomePage extends StatelessWidget {
                   noteViewModel.setSearchText(searchText),
             ),
             Expanded(
-              child: const ListNotesSection(),
+              child: Consumer<NoteViewModel>(
+                builder: (context, viewModel, child) {
+                  return ListView.builder(
+                    itemCount: viewModel.notes.length,
+                    itemExtent: 110,
+                    itemBuilder: (_, index) {
+                      return NoteCardWidget(
+                        note: viewModel.notes[index],
+                      );
+                    },
+                  );
+                },
+              ),
             ),
           ],
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () => Navigator.push(
-          context,
-          MaterialPageRoute(
-            builder: (context) => NoteDetailPage(note: null),
-          ),
-        ),
-        shape: CircleBorder(),
-        child: Icon(Icons.add),
+        onPressed: () => context.go('/note', extra: null),
+        shape: const CircleBorder(),
+        child: const Icon(Icons.add),
       ),
     );
   }
