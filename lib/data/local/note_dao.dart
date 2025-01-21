@@ -1,4 +1,5 @@
 import 'package:floor/floor.dart';
+import 'package:note_app/common/constant.dart';
 import 'package:note_app/data/local/note.dart';
 
 @dao
@@ -12,10 +13,9 @@ abstract class NoteDao {
   @update
   Future<void> updateNote(Note note);
 
-  @Query('SELECT * FROM Note')
+  @Query(Constant.getNotesQuery)
   Future<List<Note>?> getNotes();
 
-  @Query(
-      "SELECT * FROM Note WHERE title LIKE '%' || :searchText || '%' OR body LIKE '%' || :searchText || '%'")
+  @Query(Constant.searchNotesQuery)
   Future<List<Note>?> searchNotes(String searchText);
 }

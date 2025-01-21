@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:note_app/presentation/view/widget/note_card_widget.dart';
+import 'package:note_app/presentation/page/widget/note_card_widget.dart';
 import 'package:note_app/presentation/viewmodel/note_viewmodel.dart';
+import 'package:note_app/presentation/routing/app_routes.dart';
 import 'package:provider/provider.dart';
 
 class HomePage extends StatelessWidget {
@@ -30,7 +31,7 @@ class HomePage extends StatelessWidget {
             ),
             Expanded(
               child: Consumer<NoteViewModel>(
-                builder: (context, viewModel, child) {
+                builder: (_, viewModel, __) {
                   return ListView.builder(
                     itemCount: viewModel.notes.length,
                     itemExtent: 110,
@@ -47,7 +48,10 @@ class HomePage extends StatelessWidget {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () => context.go('/home/note', extra: null),
+        onPressed: () => context.go(
+          '${AppRoutes.homePath}/${AppRoutes.notePath}',
+          extra: null,
+        ),
         shape: const CircleBorder(),
         child: const Icon(Icons.add),
       ),

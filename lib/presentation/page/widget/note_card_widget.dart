@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:note_app/data/local/note.dart';
 import 'package:note_app/presentation/viewmodel/note_viewmodel.dart';
+import 'package:note_app/presentation/routing/app_routes.dart';
 import 'package:provider/provider.dart';
 
 class NoteCardWidget extends StatelessWidget {
@@ -26,7 +27,10 @@ class NoteCardWidget extends StatelessWidget {
           ),
         ),
         child: InkWell(
-          onTap: () => context.go('/home/note', extra: note),
+          onTap: () => context.go(
+            '${AppRoutes.homePath}/${AppRoutes.notePath}',
+            extra: note,
+          ),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [

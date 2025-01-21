@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:note_app/data/local/note.dart';
 import 'package:note_app/presentation/viewmodel/note_viewmodel.dart';
+import 'package:note_app/presentation/routing/app_routes.dart';
 import 'package:provider/provider.dart';
 
 class NoteDetailPage extends StatefulWidget {
@@ -68,7 +69,7 @@ class _NoteDetailPageState extends State<NoteDetailPage> {
             _bodyController.text,
             widget.note,
           );
-          context.go('/home');
+          context.go(AppRoutes.homePath);
         },
         shape: const CircleBorder(),
         child: const Icon(Icons.save),

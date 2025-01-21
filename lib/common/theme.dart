@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 
 final themeData = ThemeData(
   scaffoldBackgroundColor: Colors.grey.shade900,
-  floatingActionButtonTheme: FloatingActionButtonThemeData(
+  floatingActionButtonTheme: const FloatingActionButtonThemeData(
     backgroundColor: Colors.amber,
     foregroundColor: Colors.white,
   ),
-  textTheme: TextTheme(
+  textTheme: const TextTheme(
     bodyLarge: TextStyle(
       fontSize: 30,
       color: Colors.white,
@@ -22,29 +22,29 @@ final themeData = ThemeData(
   ),
   searchBarTheme: SearchBarThemeData(
     backgroundColor: WidgetStatePropertyAll(Colors.grey.shade800),
-    hintStyle: WidgetStatePropertyAll(
+    hintStyle: const WidgetStatePropertyAll(
       TextStyle(
         fontSize: 23,
         color: Colors.grey,
       ),
     ),
-    textStyle: WidgetStatePropertyAll(
+    textStyle: const WidgetStatePropertyAll(
       TextStyle(
         fontSize: 23,
         color: Colors.white,
       ),
     ),
-    padding: WidgetStatePropertyAll(
+    padding: const WidgetStatePropertyAll(
       EdgeInsets.symmetric(horizontal: 15),
     ),
   ),
-  textSelectionTheme: TextSelectionThemeData(
+  textSelectionTheme: const TextSelectionThemeData(
     cursorColor: Colors.blue,
     selectionColor: Colors.blue,
     selectionHandleColor: Colors.blue,
   ),
   cardColor: Colors.grey.shade800,
-  iconButtonTheme: IconButtonThemeData(
+  iconButtonTheme: const IconButtonThemeData(
     style: ButtonStyle(
       foregroundColor: WidgetStatePropertyAll(Colors.white),
     ),

@@ -3,13 +3,14 @@ import 'package:get_it/get_it.dart';
 import 'package:note_app/common/theme.dart';
 import 'package:note_app/di/get_it_setup.dart';
 import 'package:note_app/presentation/viewmodel/note_viewmodel.dart';
-import 'package:note_app/routing/app_router.dart';
+import 'package:note_app/presentation/routing/app_router.dart';
 import 'package:provider/provider.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   GetItSetup.setupDependencies();
   await GetIt.instance.allReady();
+  AppRouterHelper.instance;
   runApp(
     ChangeNotifierProvider(
       create: (_) => NoteViewModel(),
@@ -26,7 +27,7 @@ class NoteApp extends StatelessWidget {
     return MaterialApp.router(
       debugShowCheckedModeBanner: false,
       theme: themeData,
-      routerConfig: router,
+      routerConfig: AppRouterHelper.router,
     );
   }
 }
