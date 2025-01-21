@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:note_app/data/local/note.dart';
-import 'package:note_app/presentation/page/home_page.dart';
-import 'package:note_app/presentation/page/note_detail_page.dart';
-import 'package:note_app/presentation/routing/app_routes.dart';
+import 'package:note_app/src/data/local/note.dart';
+import 'package:note_app/src/presentation/page/home_page.dart';
+import 'package:note_app/src/presentation/page/note_detail_page.dart';
+import 'package:note_app/src/presentation/routing/app_routes.dart';
 
 class AppRouterHelper {
   static final AppRouterHelper _instance = AppRouterHelper._internal();

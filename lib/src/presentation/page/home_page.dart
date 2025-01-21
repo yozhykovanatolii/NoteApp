@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:note_app/presentation/page/widget/note_card_widget.dart';
-import 'package:note_app/presentation/viewmodel/note_viewmodel.dart';
-import 'package:note_app/presentation/routing/app_routes.dart';
+import 'package:note_app/src/presentation/page/widget/note_card_widget.dart';
+import 'package:note_app/src/presentation/viewmodel/note_viewmodel.dart';
+import 'package:note_app/src/presentation/routing/app_routes.dart';
 import 'package:provider/provider.dart';
 
 class HomePage extends StatelessWidget {

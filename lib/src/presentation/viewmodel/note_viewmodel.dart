@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get_it/get_it.dart';
-import 'package:note_app/data/local/note.dart';
-import 'package:note_app/data/repository/note_repository.dart';
+import 'package:note_app/src/data/local/note.dart';
+import 'package:note_app/src/data/repository/note_repository.dart';
 
 class NoteViewModel extends ChangeNotifier {
   final NoteRepository _noteRepository = GetIt.instance<NoteRepository>();

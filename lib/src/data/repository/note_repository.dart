@@ -1,6 +1,6 @@
 import 'package:get_it/get_it.dart';
-import 'package:note_app/data/local/note.dart';
-import 'package:note_app/data/local/note_database.dart';
+import 'package:note_app/src/data/local/note.dart';
+import 'package:note_app/src/data/local/note_database.dart';
 
 class NoteRepository {
   final NoteDatabase _database = GetIt.instance<NoteDatabase>();

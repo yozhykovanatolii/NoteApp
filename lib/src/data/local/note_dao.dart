@@ -1,6 +1,6 @@
 import 'package:floor/floor.dart';
-import 'package:note_app/common/constant.dart';
-import 'package:note_app/data/local/note.dart';
+import 'package:note_app/src/common/constant.dart';
+import 'package:note_app/src/data/local/note.dart';
 
 @dao
 abstract class NoteDao {
