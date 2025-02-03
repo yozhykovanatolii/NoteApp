@@ -18,48 +18,30 @@ class NoteCardWidget extends StatelessWidget {
     final noteViewModel = context.read<NoteViewModel>();
     return Padding(
       padding: const EdgeInsets.all(8),
-      child: Container(
-        padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 15),
-        decoration: BoxDecoration(
-          color: Theme.of(context).cardColor,
-          borderRadius: const BorderRadius.all(
-            Radius.circular(10),
-          ),
-        ),
+      child: Card(
         child: InkWell(
           onTap: () => context.go(
             '${AppRoutes.homePath}/${AppRoutes.notePath}',
             extra: note,
           ),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Expanded(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  mainAxisSize: MainAxisSize.min,
-                  spacing: 20,
-                  children: [
-                    Text(
-                      note.title,
-                      style: Theme.of(context).textTheme.bodySmall,
-                      overflow: TextOverflow.ellipsis,
-                      maxLines: 1,
-                    ),
-                    Text(
-                      note.body,
-                      style: Theme.of(context).textTheme.bodySmall,
-                      overflow: TextOverflow.ellipsis,
-                      maxLines: 1,
-                    ),
-                  ],
-                ),
+          child: ListTile(
+            title: Padding(
+              padding: const EdgeInsets.only(bottom: 20.0),
+              child: Text(
+                note.title,
+                overflow: TextOverflow.ellipsis,
+                maxLines: 1,
               ),
-              IconButton(
-                onPressed: () => noteViewModel.deleteNote(note),
-                icon: const Icon(Icons.delete),
-              ),
-            ],
+            ),
+            subtitle: Text(
+              note.body,
+              overflow: TextOverflow.ellipsis,
+              maxLines: 1,
+            ),
+            trailing: IconButton(
+              onPressed: () => noteViewModel.deleteNote(note),
+              icon: const Icon(Icons.delete),
+            ),
           ),
         ),
       ),

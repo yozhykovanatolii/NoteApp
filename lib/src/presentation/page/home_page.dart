@@ -13,11 +13,7 @@ class HomePage extends StatelessWidget {
     final noteViewModel = context.read<NoteViewModel>();
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Theme.of(context).scaffoldBackgroundColor,
-        title: Text(
-          'Notes',
-          style: Theme.of(context).textTheme.bodyLarge,
-        ),
+        title: const Text('Notes'),
       ),
       body: Padding(
         padding: const EdgeInsets.all(10),
@@ -34,7 +30,6 @@ class HomePage extends StatelessWidget {
                 builder: (_, viewModel, __) {
                   return ListView.builder(
                     itemCount: viewModel.notes.length,
-                    itemExtent: 110,
                     itemBuilder: (_, index) {
                       return NoteCardWidget(
                         note: viewModel.notes[index],

@@ -2,6 +2,13 @@ import 'package:flutter/material.dart';
 
 final themeData = ThemeData(
   scaffoldBackgroundColor: Colors.grey.shade900,
+  appBarTheme: AppBarTheme(
+    backgroundColor: Colors.grey.shade900,
+    titleTextStyle: const TextStyle(
+      fontSize: 30,
+      color: Colors.white,
+    ),
+  ),
   floatingActionButtonTheme: const FloatingActionButtonThemeData(
     backgroundColor: Colors.amber,
     foregroundColor: Colors.white,
@@ -9,14 +16,6 @@ final themeData = ThemeData(
   textTheme: const TextTheme(
     bodyLarge: TextStyle(
       fontSize: 30,
-      color: Colors.white,
-    ),
-    bodyMedium: TextStyle(
-      fontSize: 25,
-      color: Colors.white,
-    ),
-    bodySmall: TextStyle(
-      fontSize: 15,
       color: Colors.white,
     ),
   ),
@@ -34,19 +33,26 @@ final themeData = ThemeData(
         color: Colors.white,
       ),
     ),
-    padding: const WidgetStatePropertyAll(
-      EdgeInsets.symmetric(horizontal: 15),
-    ),
+    padding: const WidgetStatePropertyAll(EdgeInsets.symmetric(horizontal: 15)),
   ),
   textSelectionTheme: const TextSelectionThemeData(
     cursorColor: Colors.blue,
     selectionColor: Colors.blue,
     selectionHandleColor: Colors.blue,
   ),
-  cardColor: Colors.grey.shade800,
-  iconButtonTheme: const IconButtonThemeData(
-    style: ButtonStyle(
-      foregroundColor: WidgetStatePropertyAll(Colors.white),
+  cardTheme: CardTheme(
+    color: Colors.grey.shade800,
+    clipBehavior: Clip.hardEdge,
+  ),
+  listTileTheme: const ListTileThemeData(
+    titleTextStyle: TextStyle(
+      fontSize: 20,
+      color: Colors.white,
     ),
+    subtitleTextStyle: TextStyle(
+      fontSize: 18,
+      color: Colors.white,
+    ),
+    iconColor: Colors.white,
   ),
 );
