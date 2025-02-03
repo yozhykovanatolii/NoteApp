@@ -13,6 +13,10 @@ This application allows you to create, edit, delete or search notes.
 
 - [![Floor][floor-shield]][floor-url]
 
+### Navigation
+
+- [![Go_Router][go_router-shield]][go_router-url]
+
 ### State Management
 
 - [![Provider][provider-shield]][provider-url]
@@ -56,6 +60,9 @@ This application allows you to create, edit, delete or search notes.
 
 [floor-shield]: https://img.shields.io/static/v1?message=v1.5.0&color=blue&label=Floor
 [floor-url]: https://pub.dev/packages/floor
+
+[go_router-shield]: https://img.shields.io/static/v1?message=v14.6.3&color=purple&label=Go_Router
+[go_router-url]: https://pub.dev/packages/go_router
 
 [provider-shield]: https://img.shields.io/static/v1?message=v6.1.2&color=green&label=Provider
 [provider-url]: https://pub.dev/packages/provider
